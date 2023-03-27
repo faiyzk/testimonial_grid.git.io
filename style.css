@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color:hsl(212, 31%, 88%);
+    
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+.container{
+    background-color: hsl(212, 31%, 88%);
+    max-width: 1200px;
+    margin: 100px auto;
+    grid-template-columns: 300px 300px 300px 300px ;
+    grid-template-rows: 300px 300px;
+
+    
+    
+    display: grid;
+    
+    
+    
+}
+
+/* daniel */
+.daniel{
+    position: relative;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 85% 5%;
+    padding: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 20px;
+    
+    
+}
+.d_profile{
+    border: 3px solid  hsl(263, 57%, 72%);
+    border-radius: 50%;
+}
+.top{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: rgb(232, 205, 239);
+}
+.head{
+    display: flex;
+}
+
+.d_image{
+    
+    position: absolute;
+    top: 0;
+    right: 50px; 
+}
+
+/* jonathan */
+.jonathan{
+    background-color: hsl(217, 19%, 35%);
+    grid-column-start: 3;
+    border-radius: 20px;
+    margin-left: 25px;
+    padding: 30px;
+    
+    
+}
+.j_profile{
+    border: 3px transparent  hsl(263, 57%, 72%);
+    border-radius: 50%;
+}
+
+/* Jeanette */
+.jeanette{
+    background-color: white;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    border-radius: 20px;
+    margin-top: 25px;
+    padding: 30px;
+    
+}
+.je_profile{
+    border: 3px transparent  hsl(263, 57%, 72%);
+    border-radius: 50%;
+}
+
+/* patrick */
+.patrick{
+    background-color: hsl(219, 29%, 14%);
+    grid-column-start: 2 ;
+    grid-column-end: 4;
+    border-radius: 20px;
+    margin-left: 35px;
+    margin-top: 25px;
+    padding: 30px;
+    
+}
+.p_profile{
+    border: 3px solid  hsl(263, 57%, 72%);
+    border-radius: 50%;
+}
+
+/* kira */
+.kira{
+    background-color: white;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: 25px;
+}
+.k_profile{
+    border: 3px transparent  hsl(263, 57%, 72%);
+    border-radius: 50%;
+}
+
+
+/* utilities */
+
+.black_p{
+    color: black;
+    font-size: 20px;
+}
+.black_r{
+    margin-top: 14px;
+    font-size:15px ;
+    color: black;
+    opacity: 70%;
+}
+
+.white_p{
+    color: white;
+    font-size: 20px;
+}
+.white_r{
+    margin-top: 15px;
+    color: white;
+    font-size: 14px;
+    opacity: 50%;
+    margin-bottom: 5PX;
+    padding: 2px;
+}
+
+.black_name{
+    color: black;
+}
+.black_post{
+    color: black;
+    opacity: 50%;
+}
+
+@media only screen and (max-width: 750px){
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 400px;
+    margin: 0 10px;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.daniel{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.jonathan{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 0;
+    
+    
+}
+.jeanette{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 0;
+    
+}
+.patrick{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    margin: 0;
+    
+}
+.kira{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: -1;
+    margin: 0;
+    
+}
+
+    
+}
